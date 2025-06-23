@@ -1,6 +1,11 @@
 
 export default function Footer() {
   return (
-    <footer></footer>
+    <footer>
+        <div>
+            <h2> Martian Landscape </h2>
+            <h1>APOD PROJECT</h1>
+        </div>
+    </footer>
   )
 }

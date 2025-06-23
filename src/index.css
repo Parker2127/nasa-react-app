@@ -12,3 +12,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }      
+
+
+/* If you want to style using ID, you use # { pound } */
+
+#root {
+  min-height: 100vh;   /* Takes 100% of the viewport { the visible area within a browser window } */
+  display: flex; 
+
+}
+
+/* The root ID is associated the div element that React uses to display your final applciation */
+/* What happens when you apply this ? The elements arranged top-down will be changed to left-right */

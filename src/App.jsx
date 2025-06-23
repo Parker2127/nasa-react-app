@@ -6,10 +6,10 @@ function App() {
 
   return (
     <>
-    <Main></Main>
+
     <SideBar></SideBar>
+    <Main></Main>
     <Footer></Footer>
-    
     </>
   )
 }

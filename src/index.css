@@ -1,4 +1,4 @@
-:root {            /* Pseudo Class  <html> tag*/       
+:root {            /* Pseudo Class  <html> tag* :root targets the very top element of your document (the <html> tag in HTML)*/        
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;

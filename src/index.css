@@ -57,4 +57,13 @@ footer {
   bottom: 0; /*Positions the bottom edge of the footer at 0 pixels from the bottom edge of the viewport.*/
   left: 0; /*Positions the left  edge of the footer at 0 pixels from the left edge of the viewport.*/
   width : 100%; /* Makes the footer stretch 100% of the viewport's width */
+
+  /* Moving the info button to the right corner */ 
+
+  /* The footer component has 2 elements, the div tag with name and description and the button tag, the below adds space between them */
+
+  display : flex;
+  align-items : center; /* Aligns the elements to the center of the cross-axis, row by default, column if flex direction changed to column */
+  justify-content: space-between; /* Pushes the first element to the very left and the last element to the very right and distributes remaining space evenly between them*/
+  gap: 1rem;  /* gap between the elements */ /* rem stands for root em -  It's a relative unit of measurement that is based on the font-size of the root element of the document. */ 
 }

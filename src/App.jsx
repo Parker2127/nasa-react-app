@@ -8,7 +8,6 @@ function App() {
   const NASA_KEY = import.meta.env.VITE_NASA_API_KEY; // Importing the key 
 
   const [data, setData] = useState(null)
-  const [ loading, setLoading ] = useState(false)
 
   const [showModal, setShowModal] = useState(false)   //HTMLDialogElement: showModal() method
 

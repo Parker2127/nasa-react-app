@@ -40,7 +40,7 @@ function App() {
 
   return (
     <>
-    { data ? (<Main />): (
+    { data ? (<Main data = {data}/>): (
       <div className="loadingState">
         <i class="fa-solid fa-gear"></i>   {/* Try to animate for 2 gears later*/}
       </div>

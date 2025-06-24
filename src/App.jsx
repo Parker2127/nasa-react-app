@@ -10,7 +10,7 @@ function App() {
   const [data, setData] = useState(null)
   const [ loading, setLoading ] = useState(false)
 
-  const [showModal, setShowModal] = useState(false)
+  const [showModal, setShowModal] = useState(false)   //HTMLDialogElement: showModal() method
 
   // Setting the new state of showModal using the handleDisplayModal, false to true
   function handleToggleModal(){
@@ -33,7 +33,7 @@ function App() {
         console.log(err.message)
       }
     }
-    //fetchAPIData()
+    fetchAPIData()
   }, [])  // The function gets executed whenever the conditions of dependency array are met
 
   /* If the dependency array is empty, it means we are asking the function to execute whenever the page loads  */ 
@@ -47,9 +47,9 @@ function App() {
     )}
     { showModal && (
       
-      <SideBar handleToggleModal = {handleToggleModal} />)} {/* Passing props, these are the attributes to the component, received by the sidebar component*/}
+      <SideBar data = {data} handleToggleModal = {handleToggleModal} />)} {/* Passing props, these are the attributes to the component, received by the sidebar component*/}
 
-    <Footer handleToggleModal={handleToggleModal}/> {/* Passing props, these are the attributes to the component, received by the footer component*/}
+    {data && (<Footer data = {data} handleToggleModal={handleToggleModal}/>) } {/* Passing props, these are the attributes to the component, received by the footer component*/}
     </> 
   )
 }

@@ -12,7 +12,7 @@ export default function Footer( props ) {
       </div>
 
       <button onClick = {handleToggleModal}>
-        <i class="fa-solid fa-circle-info"></i>
+        <i className="fa-solid fa-circle-info"></i>
       </button>
     </footer>
   )

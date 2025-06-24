@@ -1,9 +1,14 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Footer from "./components/Footer"
 import Main from "./components/Main"
 import SideBar from "./components/SideBar"
 
 function App() {
+
+  const NASA_KEY = import.meta.env.VITE_NASA_API_KEY; // Importing the key 
+
+  const [data, setData] = useState(null)
+  const [ loading, setLoading ] = useState(false)
 
   const [showModal, setShowModal] = useState(false)
 
@@ -11,6 +16,27 @@ function App() {
   function handleToggleModal(){
     setShowModal(!showModal)
   }
+
+  // In React, to fetch data from the API, we use useEffect hook
+  useEffect(() => {
+    async function fetchAPIData(){
+      const NASA_KEY = import.meta.env.VITE_NASA_API_KEY;
+      const url = "https://api.nasa.gov/planetary/apod" + 
+      `?api_key=${NASA_KEY}`  //API parameters in query strings (like ?api_key=YOUR_KEY) do not tolerate spaces around the equals sign (=)
+
+      try{
+        const response = await fetch(url)
+        const apiData = await response.json()
+        setData(apiData)
+        console.log('DATA\n', apiData)
+      } catch(err){
+        console.log(err.message)
+      }
+    }
+    fetchAPIData()
+  }, [])  // The function gets executed whenever the conditions of dependency array are met
+
+  /* If the dependency array is empty, it means we are asking the function to execute whenever the page loads  */ 
 
   return (
     <>

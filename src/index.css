@@ -121,9 +121,9 @@ footer {
   flex-direction : column;
   gap: 1rem;
   padding : 1rem;
-  overflow-y: scroll;  /* adding a vertical scroll bar, enabling the user to view the content if it exceeds the vertical height */
+  overflow-y: auto;  /* adding a vertical scroll bar, enabling the user to view the content if it exceeds the vertical height */
   height: 100%;
-  width : 90%;
+  width : 80%;
   max-width : 800px;
   margin-left: auto;   /* auto margins withing a flex container */
   background : #030615;
@@ -139,4 +139,21 @@ footer {
   border : none;
   outline : none;
   margin-right : auto;
+}
+
+/* Styling for mobile version : Complete */ 
+
+/* Styling for bigger screens */
+
+@media (min-width: 640px){  /* The below styles get applied when the min-width criteria is exceeded */
+  .sidebar{
+    position : relative;
+    inset : unset;
+    min-width : 30%;
+    box-shadow : 0  0 10px 10px #030615; 
+  }
+
+  .sidebarContents{
+    margin: unset;
+  }
 }

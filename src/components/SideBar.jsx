@@ -7,7 +7,7 @@ export default function SideBar() {
               <h2> Martian Landscape</h2>
               <div>
                   <p> Description</p>
-                  <p> ioasfiuahfiugairsbfguiarhgipuabvouiasebviuadhrgvpiuaerbvipaeurrvbjkaerbveb</p>
+                  <p> I can't wait till I have grandchildren. When I was younger, I had to walk to the rim of a crater. Uphill! In an EVA suit! On Mars, ya little shit! Ya hear me? Mars!</p>
               </div>
 
               <button>

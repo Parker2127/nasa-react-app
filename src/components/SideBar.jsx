@@ -9,6 +9,10 @@ export default function SideBar() {
                   <p> Description</p>
                   <p> ioasfiuahfiugairsbfguiarhgipuabvouiasebviuadhrgvpiuaerbvipaeurrvbjkaerbveb</p>
               </div>
+
+              <button>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
           </div>
         </div>
   )

@@ -89,6 +89,9 @@ footer {
             <p> Description</p>
             <p> ioasfiuahfiugairsbfguiarhgipuabvouiasebviuadhrgvpiuaerbvipaeurrvbjkaerbveb</p>
         </div>
+
+        <button>
+        </button>
     </div>
 </div> */
 
@@ -126,3 +129,14 @@ footer {
   background : #030615;
 }
 
+.sidebarContents div {
+  flex: 1;
+}
+
+.sidebarContents button {
+  background: transparent;
+  color : white;
+  border : none;
+  outline : none;
+  margin-right : auto;
+}

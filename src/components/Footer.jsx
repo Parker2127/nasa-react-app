@@ -1,7 +1,7 @@
 
 export default function Footer( props ) {
 
-  const {showModal, handleToggleModal} = props  /* Desocnstructing the props received */
+  const {handleToggleModal} = props  /* Desocnstructing the props received */
 
   return (
     <footer>

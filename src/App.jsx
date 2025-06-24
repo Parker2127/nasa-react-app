@@ -17,8 +17,7 @@ function App() {
     <Main />
     { showModal && (
       
-      <SideBar handleToggleModal = {handleToggleModal} /> {/* Passing props, these are the attributes to the component, received by the sidebar component*/}
-    )}
+      <SideBar handleToggleModal = {handleToggleModal} />)} {/* Passing props, these are the attributes to the component, received by the sidebar component*/}
 
     <Footer handleToggleModal={handleToggleModal}/> {/* Passing props, these are the attributes to the component, received by the footer component*/}
     </> 

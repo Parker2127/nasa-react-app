@@ -62,9 +62,44 @@ footer {
   /* The footer component has 2 elements, the div tag with name and description and the button tag, the below adds space between them */
 
   display : flex;
-  align-items : center; /* Aligns the elements to the center of the cross-axis, row by default, column if flex direction changed to column */
+  /* align-items : center; Aligns the elements to the center of the cross-axis, row by default, column if flex direction changed to column */
   justify-content: space-between; /* Pushes the first element to the very left and the last element to the very right and distributes remaining space evenly between them*/
   gap: 1rem;  /* gap between the elements */ /* rem stands for root em -  It's a relative unit of measurement that is based on the font-size of the root element of the document. */ 
+
+  padding : 1rem;
+}
+
+footer div {
+  display: flex;
+  flex-direction : column;
+}
+
+footer h2{
+  font-size : 1.4rem;
+}
+
+footer h1 {
+  font-size : 0.9rem; /* Defines the size of the font */
+  font-weight : 200; /* Defines the thicknesss or boldness of the font */
+}
+
+footer button {
+  background : transparent;
+  border :none;
+  outline : none;
+  color: white;
+  padding : 1rem;  /* There should not be space between numerical value and unit, remember ! */
+
+  transition-duration: 200ms; /* time taken for the button property to change when hovered */
+  cursor : pointer; /* This to get a hand pointing symbol when the button is hovered */
+}
+
+footer button i {
+  font-size : 1.5rem;
+}
+
+footer button:hover {
+  opacity : 0.7;
 }
 
 
@@ -139,6 +174,7 @@ footer {
   border : none;
   outline : none;
   margin-right : auto;
+  
 }
 
 /* Styling for mobile version : Complete */ 

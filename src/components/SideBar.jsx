@@ -11,7 +11,7 @@ export default function SideBar() {
               </div>
 
               <button>
-                <i class="fa-solid fa-arrow-right"></i>
+                <i class="fa-solid fa-arrow-right fa-20x"></i>
               </button>
           </div>
         </div>

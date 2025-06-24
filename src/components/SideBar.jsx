@@ -1,5 +1,7 @@
 
-export default function SideBar() {
+export default function SideBar(props) {
+
+  const { handleToggleModal } = props;
   return (
         <div className="sidebar">
           <div className="bgOverlay"></div>
@@ -10,7 +12,7 @@ export default function SideBar() {
                   <p> I can't wait till I have grandchildren. When I was younger, I had to walk to the rim of a crater. Uphill! In an EVA suit! On Mars, ya little shit! Ya hear me? Mars!</p>
               </div>
 
-              <button>
+              <button onClick={handleToggleModal}>
                 <i class="fa-solid fa-arrow-right fa-20x"></i>
               </button>
           </div>

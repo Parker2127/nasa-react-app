@@ -33,14 +33,18 @@ function App() {
         console.log(err.message)
       }
     }
-    fetchAPIData()
+    //fetchAPIData()
   }, [])  // The function gets executed whenever the conditions of dependency array are met
 
   /* If the dependency array is empty, it means we are asking the function to execute whenever the page loads  */ 
 
   return (
     <>
-    <Main />
+    { data ? (<Main />): (
+      <div className="loadingState">
+        <i class="fa-solid fa-gear"></i>   {/* Try to animate for 2 gears later*/}
+      </div>
+    )}
     { showModal && (
       
       <SideBar handleToggleModal = {handleToggleModal} />)} {/* Passing props, these are the attributes to the component, received by the sidebar component*/}

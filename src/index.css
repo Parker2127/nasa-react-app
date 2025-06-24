@@ -184,6 +184,30 @@ footer button:hover {
   opacity : 0.6;
 }
 
+/* Loading icon styling */
+.loadingState{
+  display: flex;
+  align-items:center;
+  flex: 1;
+  justify-content: center;
+}
+
+.loadingState i{
+  opacity : 0.2;
+  font-size : 3rem;
+  animation : spin 1s linear infinite;
+}
+
+@keyframes  spin {
+  from {
+    transform : rotate(0deg);
+  }
+
+  to{
+    transform: rotate(360deg);
+  }
+}
+
 /* Styling for mobile version : Complete */ 
 
 /* Styling for bigger screens */
@@ -199,4 +223,6 @@ footer button:hover {
   .sidebarContents{
     margin: unset;
   }
+
 }
+

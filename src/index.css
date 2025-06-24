@@ -3,7 +3,6 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
   color: white;
   background-color: #030615;
 
@@ -67,3 +66,17 @@ footer {
   justify-content: space-between; /* Pushes the first element to the very left and the last element to the very right and distributes remaining space evenly between them*/
   gap: 1rem;  /* gap between the elements */ /* rem stands for root em -  It's a relative unit of measurement that is based on the font-size of the root element of the document. */ 
 }
+
+
+.bgGradient{
+  position: absolute; /* This removes the element from normal docuument flow and positions itself relative to its position ancestor */
+
+  /* It is removed from the document flow but not removed from the document tree */ 
+
+  inset:0; /* shorthand for top:0, left:0, bottom :0, right: 0 */ /* stretch and cover the entire surface you are stuck onto */
+  z-index: -1; /* The higher value index stacks on top of lower value index, the default parent value would be 0, so this makes the gradient go below the footer as intended */
+  background : linear-gradient(to top, #030615, rgba(255,255,255, 0)); /* (gradient will start at the bottom and moves towards top, starting color of the gradient, ending color of the gradient */ 
+}
+
+/*This is to make sure the text in the footer is more brighter and visible with the gradient added */
+/*Position ancestor is any element with a position value except static, the position ancestor of this newly created div element is the footer */

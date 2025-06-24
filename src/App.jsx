@@ -7,16 +7,21 @@ function App() {
 
   const [showModal, setShowModal] = useState(false)
 
+  // Setting the new state of showModal using the handleDisplayModal, false to true
+  function handleToggleModal(){
+    setShowModal(!showModal)
+  }
+
   return (
     <>
     <Main />
     { showModal && (
       
       <SideBar/>
-
     )}
-    <Footer />
-    </>
+
+    <Footer handleToggleModal={handleToggleModal}/> {/* Passing props, these are the attributes to the component, received by the footer component*/}
+    </> 
   )
 }
 
